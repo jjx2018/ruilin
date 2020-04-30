@@ -1,0 +1,28 @@
+
+[时间]:2020-04-25 09:03:16,100
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('01','202004250001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='EA1103'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='EA1103'),'EA1103','刹车固定铝片','W19*T5*L2000mm','5','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5819,'2020/4/26 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00',2066)
+
+[时间]:2020-04-25 09:03:16,109
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2066
+
+[时间]:2020-04-25 09:03:16,110
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('02','202004250001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='HI0312-101
+'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='HI0312-101
+'),'HI0312-101
+','交叉管固定块左
+','压铸件','350','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5817,'2020/4/26 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00',2064)
+
+[时间]:2020-04-25 09:03:16,110
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2064
+
+[时间]:2020-04-25 09:03:16,112
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('03','202004250001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='HI0149-107'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='HI0149-107'),'HI0149-107','拉帽','M6*P1.0*15.3mm','700','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5816,'2020/4/26 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00',2063)
+
+[时间]:2020-04-25 09:03:16,112
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2063

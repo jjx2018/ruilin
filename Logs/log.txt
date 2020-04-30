@@ -1,0 +1,829 @@
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+de.key::ItemName:::de.value::坐垫护条
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (N'坐垫护条' = [Extent1].[ItemName]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+insert into ProcessRoute         (itemno,itemsn,ProcessingSeq,ProcessCode,ProcessName,MoldelNo,EquipmentNoName,Nature,Team,Department,WorkBatch,FixPerTime,ChangePerTime,Price,Remark) values('RL-A91002',63642,'1','11','倒角','','','厂内','','','','','','','')
+insert into ProcessRoute         (itemno,itemsn,ProcessingSeq,ProcessCode,ProcessName,MoldelNo,EquipmentNoName,Nature,Team,Department,WorkBatch,FixPerTime,ChangePerTime,Price,Remark) values('RL-A91002',63642,'2','22','扩口','','','厂内','','','','','','','')
+insert into ProcessRoute         (itemno,itemsn,ProcessingSeq,ProcessCode,ProcessName,MoldelNo,EquipmentNoName,Nature,Team,Department,WorkBatch,FixPerTime,ChangePerTime,Price,Remark) values('RL-A91002',63642,'3','33','委外电镀','','','委外','','','','','','','')
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+insert into ProcessRoute         (itemno,itemsn,ProcessingSeq,ProcessCode,ProcessName,MoldelNo,EquipmentNoName,Nature,Team,Department,WorkBatch,FixPerTime,ChangePerTime,Price,Remark) values('RL-A91002',63642,'1','11','倒角','','','厂内','','','','','','','')
+insert into ProcessRoute         (itemno,itemsn,ProcessingSeq,ProcessCode,ProcessName,MoldelNo,EquipmentNoName,Nature,Team,Department,WorkBatch,FixPerTime,ChangePerTime,Price,Remark) values('RL-A91002',63642,'2','22','扩口','','','厂内','','','','','','','')
+insert into ProcessRoute         (itemno,itemsn,ProcessingSeq,ProcessCode,ProcessName,MoldelNo,EquipmentNoName,Nature,Team,Department,WorkBatch,FixPerTime,ChangePerTime,Price,Remark) values('RL-A91002',63642,'3','33','委外电镀','','','委外','','','','','','','')
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Filter1].[SN1] AS [SN], 
+    [Filter1].[OrderNo] AS [OrderNo], 
+    [Filter1].[ProNo] AS [ProNo], 
+    [Filter1].[ProName] AS [ProName], 
+    [Filter1].[ItemNo1] AS [ItemNo], 
+    [Filter1].[ItemName1] AS [ItemName], 
+    [Filter1].[MainFrom1] AS [MainFrom], 
+    [Filter1].[UsingQuantity] AS [UsingQuantity], 
+    [Filter1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Filter1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Filter1].[IsConfirm] AS [IsConfirm], 
+    [Filter1].[Spec1] AS [Spec], 
+    [Filter1].[Material1] AS [Material], 
+    [Filter1].[SurfaceDeal1] AS [SurfaceDeal], 
+    [Filter1].[Sclass1] AS [Sclass], 
+    [Filter1].[ReceiveDept] AS [ReceiveDept], 
+    [Filter1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Filter1].[ConfirmDate] AS [ConfirmDate], 
+    [Filter1].[BarCode] AS [BarCode], 
+    [Filter1].[Remark1] AS [Remark], 
+    [Filter1].[BomSN] AS [BomSN], 
+    [Filter1].[IsPlan] AS [IsPlan], 
+    [Filter1].[SupplierId] AS [SupplierId]
+    FROM   (SELECT [Extent1].[SN] AS [SN1], [Extent1].[BomSN] AS [BomSN], [Extent1].[OrderNo] AS [OrderNo], [Extent1].[ProNo] AS [ProNo], [Extent1].[ProName] AS [ProName], [Extent1].[ItemNo] AS [ItemNo1], [Extent1].[ItemName] AS [ItemName1], [Extent1].[Spec] AS [Spec1], [Extent1].[Material] AS [Material1], [Extent1].[SurfaceDeal] AS [SurfaceDeal1], [Extent1].[Sclass] AS [Sclass1], [Extent1].[MainFrom] AS [MainFrom1], [Extent1].[UsingQuantity] AS [UsingQuantity], [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], [Extent1].[ReceiveDept] AS [ReceiveDept], [Extent1].[IsConfirm] AS [IsConfirm], [Extent1].[IsPlan] AS [IsPlan], [Extent1].[Receiver] AS [Receiver], [Extent1].[ConfirmDate] AS [ConfirmDate], [Extent1].[BarCode] AS [BarCode], [Extent1].[Remark] AS [Remark1], [Extent2].[SupplierId] AS [SupplierId]
+        FROM  [dbo].[Instruction] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+        WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) ) AS [Filter1]
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Filter1].[Receiver] = [Extent3].[userid]) OR (([Filter1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE (([Filter1].[MainFrom1] = @p__linq__0) OR (([Filter1].[MainFrom1] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Filter1].[IsPlan] = @p__linq__1)
+----------------------------------------------------------
+----------------------------------------------------------
+SELECT 
+    [Extent1].[SN] AS [SN], 
+    [Extent1].[OrderNo] AS [OrderNo], 
+    [Extent1].[ProNo] AS [ProNo], 
+    [Extent1].[ProName] AS [ProName], 
+    [Extent1].[ItemNo] AS [ItemNo], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[MainFrom] AS [MainFrom], 
+    [Extent1].[UsingQuantity] AS [UsingQuantity], 
+    [Extent1].[ConfirmQuantity] AS [ConfirmQuantity], 
+    [Extent1].[RealUsingQuantity] AS [RealUsingQuantity], 
+    [Extent1].[IsConfirm] AS [IsConfirm], 
+    [Extent1].[Spec] AS [Spec], 
+    [Extent1].[Material] AS [Material], 
+    [Extent1].[SurfaceDeal] AS [SurfaceDeal], 
+    [Extent1].[Sclass] AS [Sclass], 
+    [Extent1].[ReceiveDept] AS [ReceiveDept], 
+    [Extent1].[Receiver] AS [Receiver], 
+    [Extent3].[ChineseName] AS [ChineseName], 
+    [Extent1].[ConfirmDate] AS [ConfirmDate], 
+    [Extent1].[BarCode] AS [BarCode], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[BomSN] AS [BomSN], 
+    [Extent1].[IsPlan] AS [IsPlan], 
+    [Extent2].[SupplierId] AS [SupplierId]
+    FROM   [dbo].[Instruction] AS [Extent1]
+    LEFT OUTER JOIN [dbo].[RLItems] AS [Extent2] ON ([Extent1].[ItemNo] = [Extent2].[ItemNo]) OR (([Extent1].[ItemNo] IS NULL) AND ([Extent2].[ItemNo] IS NULL))
+    LEFT OUTER JOIN [dbo].[V_UserInfor] AS [Extent3] ON ([Extent1].[Receiver] = [Extent3].[userid]) OR (([Extent1].[Receiver] IS NULL) AND ([Extent3].[userid] IS NULL))
+    WHERE ( NOT ((cast(0 as float(53)) = [Extent1].[RealUsingQuantity]) AND ([Extent1].[RealUsingQuantity] IS NOT NULL))) AND (1 = [Extent1].[IsConfirm]) AND (([Extent1].[MainFrom] = @p__linq__0) OR (([Extent1].[MainFrom] IS NULL) AND (@p__linq__0 IS NULL)))
+----------------------------------------------------------

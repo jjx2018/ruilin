@@ -1,0 +1,156 @@
+
+[时间]:2020-04-24 15:19:38,243
+[级别]:INFO
+[内容]:update Instruction set RealUsingQuantity=UsingQuantity,ConfirmQuantity=0,ConfirmDate=getdate(),IsConfirm=1 where sn=622
+
+[时间]:2020-04-24 15:19:38,252
+[级别]:INFO
+[内容]:select case  when (select COUNT(*) from Instruction where OdtSN =   and OrderNo = 'RL3220000003') >= (select COUNT(*) from BomDetail where FSN = (select SN from BomHeader where OdtSN =  and OrderNo = 'RL3220000003')) then 1 else 0 end 
+
+[时间]:2020-04-24 15:22:06,186
+[级别]:INFO
+[内容]:update Instruction set RealUsingQuantity=UsingQuantity,ConfirmQuantity=0,ConfirmDate=getdate(),IsConfirm=1 where sn=2238
+
+[时间]:2020-04-24 15:22:06,186
+[级别]:INFO
+[内容]:select case  when (select COUNT(*) from Instruction where OdtSN = 315  and OrderNo = 'RL1111111111') >= (select COUNT(*) from BomDetail where FSN = (select SN from BomHeader where OdtSN = 315 and OrderNo = 'RL1111111111')) then 1 else 0 end 
+
+[时间]:2020-04-24 15:22:06,201
+[级别]:INFO
+[内容]:update OrderDetail set isconfirm=1 where SN = 315  and OrderNo = 'RL1111111111'
+
+[时间]:2020-04-24 15:22:06,201
+[级别]:INFO
+[内容]:update Instruction set RealUsingQuantity=UsingQuantity,ConfirmQuantity=0,ConfirmDate=getdate(),IsConfirm=1 where sn=2235
+
+[时间]:2020-04-24 15:22:06,201
+[级别]:INFO
+[内容]:select case  when (select COUNT(*) from Instruction where OdtSN = 315  and OrderNo = 'RL1111111111') >= (select COUNT(*) from BomDetail where FSN = (select SN from BomHeader where OdtSN = 315 and OrderNo = 'RL1111111111')) then 1 else 0 end 
+
+[时间]:2020-04-24 15:22:06,202
+[级别]:INFO
+[内容]:update OrderDetail set isconfirm=1 where SN = 315  and OrderNo = 'RL1111111111'
+
+[时间]:2020-04-24 15:22:06,202
+[级别]:INFO
+[内容]:update Instruction set RealUsingQuantity=UsingQuantity,ConfirmQuantity=0,ConfirmDate=getdate(),IsConfirm=1 where sn=2234
+
+[时间]:2020-04-24 15:22:06,202
+[级别]:INFO
+[内容]:select case  when (select COUNT(*) from Instruction where OdtSN = 315  and OrderNo = 'RL1111111111') >= (select COUNT(*) from BomDetail where FSN = (select SN from BomHeader where OdtSN = 315 and OrderNo = 'RL1111111111')) then 1 else 0 end 
+
+[时间]:2020-04-24 15:22:06,204
+[级别]:INFO
+[内容]:update OrderDetail set isconfirm=1 where SN = 315  and OrderNo = 'RL1111111111'
+
+[时间]:2020-04-24 15:50:22,967
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-A62016EL','洗澡凳带靠背','DA0041-202','主体管上','PCS','Φ25.4*T1.4*L979mm','1','RL7720022101',0,(SELECT workshop from BomDetail where  SN=6882),'admin',getdate(),6882,'2020/4/28 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00')
+
+[时间]:2020-04-24 15:50:22,967
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2440
+
+[时间]:2020-04-24 15:50:22,967
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-A62016EL','洗澡凳带靠背','DA0040-202','主体管下','PCS','Φ25.4*T1.4*L979mm','1','RL7720022101',0,(SELECT workshop from BomDetail where  SN=6879),'admin',getdate(),6879,'2020/4/28 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00')
+
+[时间]:2020-04-24 15:50:22,967
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2437
+
+[时间]:2020-04-24 15:50:22,967
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-123','测试车','EA0877-108','扶手管（表面滚花）','PCS','Φ22*T1.5*L570mm','2','RL1111111111',0,(SELECT workshop from BomDetail where  SN=5739),'admin',getdate(),5739,'2020/4/28 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00')
+
+[时间]:2020-04-24 15:50:22,968
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2238
+
+[时间]:2020-04-24 15:50:22,968
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-A42089','铝制四轮车','HE0105-109','开关总成(右）','PCS','组合件','1','RL7220010301',0,(SELECT workshop from BomDetail where  SN=5936),'admin',getdate(),5936,'2020/4/28 0:00:00','2020/4/25 0:00:00','2020/4/30 0:00:00')
+
+[时间]:2020-04-24 15:50:22,968
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2183
+
+[时间]:2020-04-24 17:49:58,356
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-A42089','铝制四轮车','HE0042-109','开关总成(左）','PCS','组合件','1','RL7220010301',0,(SELECT workshop from BomDetail where  SN=5929),'admin',getdate(),5929,'2020/4/26 0:00:00','2020/4/25 0:00:00','2020/4/28 0:00:00',2176)
+
+[时间]:2020-04-24 17:49:58,369
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2176
+
+[时间]:2020-04-24 17:49:58,369
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-A42089','铝制四轮车','HE0503-109
+','连杆总成右','PCS','组合件','2','RL7220010301',0,(SELECT workshop from BomDetail where  SN=5918),'admin',getdate(),5918,'2020/4/26 0:00:00','2020/4/25 0:00:00','2020/4/28 0:00:00',2165)
+
+[时间]:2020-04-24 17:49:58,369
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2165
+
+[时间]:2020-04-24 17:49:58,369
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO SendOutPlan (SendOutPlanNo,ProviderID ,Provider ,ProNo ,ProName ,ItemNo ,ItemName  ,Unit,Spec ,Quantity ,SaleOrderNo ,State ,WorkShop,Inputer,InputeDate,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('202004240001','2','佛山市鑫恒利金属科技有限公司','RL-A42089','铝制四轮车','EA1596-104
+','交叉下横管（右）RL-T2724','PCS','RL-T2724*W26.5*H24*L80mm','350','RL7220010301',0,(SELECT workshop from BomDetail where  SN=5910),'admin',getdate(),5910,'2020/4/26 0:00:00','2020/4/25 0:00:00','2020/4/28 0:00:00',2157)
+
+[时间]:2020-04-24 17:49:58,369
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where  sn=2157
+
+[时间]:2020-04-24 18:15:50,217
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('01','202004240001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='XX1039'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='XX1039'),'XX1039','LOGO贴纸','L150*W35mm','2','','PCS','RL1919121201',0,'','admin',getdate(),'RL-A42058','铝制四轮车',6181,'2020/4/25 0:00:00','2020/4/25 0:00:00','2020/4/28 0:00:00',2587)
+
+[时间]:2020-04-24 18:15:50,225
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2587
+
+[时间]:2020-04-24 18:15:50,227
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('02','202004240001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='EA1555
+'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='EA1555
+'),'EA1555
+','下主体管右','椭圆管L700*W55.7*H20.25*T2.0','350','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5825,'2020/4/25 0:00:00','2020/4/25 0:00:00','2020/4/28 0:00:00',2072)
+
+[时间]:2020-04-24 18:15:50,227
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2072
+
+[时间]:2020-04-24 18:15:50,228
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('03','202004240001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='HJ0194'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='HJ0194'),'HJ0194','前轮竖管','Φ34*T4.5*H75mm','350','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5821,'2020/4/25 0:00:00','2020/4/25 0:00:00','2020/4/28 0:00:00',2068)
+
+[时间]:2020-04-24 18:15:50,228
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2068
+
+[时间]:2020-04-24 18:17:04,840
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('01','202004240001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='XX1039'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='XX1039'),'XX1039','LOGO贴纸','L150*W35mm','2','','PCS','RL1919121201',0,'','admin',getdate(),'RL-A42058','铝制四轮车',6181,'2020/4/25 0:00:00','2020/4/24 0:00:00','2020/4/28 0:00:00',2587)
+
+[时间]:2020-04-24 18:17:04,840
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2587
+
+[时间]:2020-04-24 18:17:04,845
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('02','202004240001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='EA1555
+'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='EA1555
+'),'EA1555
+','下主体管右','椭圆管L700*W55.7*H20.25*T2.0','350','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5825,'2020/4/25 0:00:00','2020/4/24 0:00:00','2020/4/28 0:00:00',2072)
+
+[时间]:2020-04-24 18:17:04,845
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2072
+
+[时间]:2020-04-24 18:17:04,848
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchasePlan (SeqNo ,PurPlanNo ,Properties ,PDate ,Purchaser ,Dept ,Project ,Provider ,ProviderName ,ItemNo ,ItemName ,Spec ,Quantity ,PreDeliveryDate ,Unit ,SaleOrderNo ,State ,PreBill,Inputer,InputeDate,prono,ProName,BomSN,PlanFinishDate,PlanStartDate,ZhuangPeiDate,ISN) VALUES('03','202004240001','',getdate(),'超级管理员','技术中心','',(select supplierid from RLItems where itemno='HJ0194'),(select b.Name from RLItems a,provider b where a.SupplierId=b.SN and ItemNo='HJ0194'),'HJ0194','前轮竖管','Φ34*T4.5*H75mm','350','','PCS','RL7220010301',0,'','admin',getdate(),'RL-A42089','铝制四轮车',5821,'2020/4/25 0:00:00','2020/4/24 0:00:00','2020/4/28 0:00:00',2068)
+
+[时间]:2020-04-24 18:17:04,848
+[级别]:INFO
+[内容]:sqlpur::::update Instruction set isplan=1 where sn=2068

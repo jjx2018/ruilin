@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        物料标识卡
+    </title>
+    <style type="text/css">
+        .list table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+        }
+
+            .list table th {
+                border: solid #000 1px;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            .list table td {
+                border: solid #000 1px;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+            }
+    </style>
+
+</head>
+<body>
+    <div id="print" style="padding:20px;">
+        <table style="width:100%; border:3px solid #000;" cellpadding="0" cellspacing="0">
+            <tr style=" font-size: 25px; font-weight:600; ">
+                <td colspan="2">
+                    <table style="width:100%; border:0px solid #000;" cellpadding="0" cellspacing="0">
+                        <tr style=" font-size: 25px; font-weight:600; ">
+                            <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; text-align: center; width: 10%;">
+                                单号
+                            </td>
+                            <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; width: 60%; ">
+                                $orderno
+                            </td>
+                            <td style="border-bottom: solid 3px #000; height: 40px; width: 30%; ">
+                                $sdate
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                    </tr>
+                    <tr style=" font-size: 25px; font-weight: 600; height: 40px; ">
+                        <td style="border-bottom: solid 3px black; border-right: solid 3px #000; width: 17.5px; text-align: center; width: 10%; ">
+                            备注
+                        </td>
+                        <td  style="border-bottom:solid 3px black; width:90%;">
+                            $remark
+                        </td>
+                    </tr>
+                    <tr style=" font-size: 25px; font-weight: 600; height: 40px; ">
+                        <td colspan="2" style="border-bottom: solid 0px #000;">
+                            <table style="width:100%; border:0px solid #000;" cellpadding="0" cellspacing="0">
+                                <tr style=" font-size: 25px; font-weight:600; ">
+                                    <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; text-align: center; width: 15%; ">
+                                        物料编号
+                                    </td>
+                                    <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; width:35%;">
+                                        $itemno
+                                    </td>
+                                    <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; width: 10%;text-align:center; ">
+                                        供应商
+                                    </td>
+                                    <td style="border-bottom: solid 3px #000; height: 40px; width: 40%">
+                                        $provider
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr style=" font-size: 25px;  font-weight:600;">
+                       <td colspan="2">
+                           <table style="width:100%; border:0px solid #000;" cellpadding="0" cellspacing="0">
+                               <tr style=" font-size: 25px; font-weight:600; ">
+                                   <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; text-align:center; width:15%; ">
+                                       物料名称
+                                   </td>
+                                   <td style="border-bottom: solid 3px #000; height: 40px;width:85%; ">
+                                       $itemname
+                                   </td>
+                               </tr>
+                               <tr style=" font-size: 25px; font-weight:600; ">
+                                   <td style="border-bottom: solid 0px #000; height: 40px; border-right: solid 3px #000; text-align: center; width: 15%; ">
+                                       物料规格
+                                   </td>
+                                   <td style="border-bottom: solid 0px #000; height: 40px; width: 85%;">
+                                       $spec
+                                   </td>
+                               </tr>
+                           </table>
+
+                       </td>
+                    </tr>
+            <tr>
+                <td colspan="2">
+                    <table style="width: 100%; border-top: 3px solid #000; border-bottom: 3px solid #000; " cellpadding="0" cellspacing="0">
+                        <tr style=" font-size: 25px; font-weight:600; ">
+                            <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000;text-align:center;width:15%;">
+                                数量
+                            </td>
+                            <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000;text-align:center;width:35%; ">
+                                $quantity
+                            </td>
+                            <td style="border-bottom: solid 3px #000; height: 40px; border-right: solid 3px #000; text-align: center; width: 15%; ">
+                                材质
+                            </td>
+                            <td style="border-bottom: solid 3px #000; height: 40px; width: 35%;">
+                                $material
+                            </td>
+                        </tr>
+                        <tr style=" font-size: 25px; font-weight:600; ">
+                            <td style="border-bottom: solid 0px #000; height: 40px; border-right: solid 3px #000; text-align: center; width: 15%; ">
+                                颜色
+                            </td>
+                            <td style="border-bottom: solid 0px #000; height: 40px; border-right: solid 3px #000; width: 35%; ">
+                                $color
+                            </td>
+                            <td style="border-bottom: solid 0px #000; height: 40px; border-right: solid 3px #000; text-align: center; width: 15%; ">
+                                库位
+                            </td>
+                            <td style="border-bottom: solid 0px #000; height: 40px; width: 35%;">
+                                $caseno
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr style=" font-size: 25px;  font-weight:600;">
+                <td colspan="2" style="text-align: center; height: 80px; font-family: Telen128Bar; font-size: 36px;padding:10px 0 10px 0px;">
+                    $code
+                </td>
+            </tr>
+            <tr style=" font-size: 25px;  font-weight:600;">
+                <td colspan="2" style="text-align:center;height:20px;">
+                   $codevalue
+                </td>
+            </tr>
+            <tr style=" font-size: 25px;  font-weight:600;display:none;">
+                <td colspan="2" style="text-align:center;height:80px;">
+                    <img src="@codejpg" style="width:500px;height:70px;" />
+                </td>
+            </tr>
+                </table>
+        
+</div>
+</body>
+</html>

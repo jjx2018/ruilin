@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .loading {
+            position: absolute;
+            /* top:50%;
+        left:50%;  */
+            width: 220px;
+            height: 56px;
+            line-height: 56px;
+            color: #fff;
+            padding-left: 60px;
+            font-size: 15px;
+            background: #000 url(data:image/gif;base64,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) no-repeat 10px 50%;
+            opacity: 0.7;
+            z-index: 9999; /*浮动在最上层 */
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+            filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+        }
+
+
+        text.highcharts-credits {
+            display: none;
+        }
+    </style>
+
+    <script src="../code/highcharts.js"></script>
+    <script src="../code/modules/exporting.js"></script>
+    <script src="../js/jquery-1.11.2.min.js"></script>
+
+    <title></title>
+</head>
+<body style="background-color: #fff;">
+    <div id="msgdiv" style="display:none;color:red;">网络中断...</div>
+    <div style="position:fixed;top:0px;margin:0 auto;font-size:30px;">
+        <span id="datetd" style="position:fixed;float:left;left:10px;color:#fff;"></span>
+        <span id="timetd" style="position: fixed; float: right; right: 10px; color: #fff;"></span>
+    </div>
+
+    <table style="width: 100%; border-spacing: 0px; margin: 0px auto; border-collapse: collapse; height: 100%; table-layout: fixed; border:0px solid #000;" align="center" cellspacing="0">
+        <tr style="">
+            <td >
+                <div id="curmonthline" style="width: 100%; height: 130px;"></div>
+            </td>
+        </tr>
+    </table>
+
+    <div style="display:none;">
+        <input type="button" onclick="startchange()" value="start" />
+        <input type="button" onclick="stopchange()" value="stop" />
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+
+
+
+
+    // 创建渐变色
+    Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+        return {
+            radialGradient: { cx: 0.5, cy: 0.3, r: 0.7 },
+            stops: [
+                [0, color],
+                [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+            ]
+        };
+    });
+ 
+    var curmonthlinechart = Highcharts.chart('curmonthline', {
+        chart: {
+            type: 'line',
+            backgroundColor: 'rgba(0,0,0,0)'
+        },
+        title: { text: '本年' },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+        exporting: { enabled: false },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+            categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '按月统计'
+            },
+            stackLabels: {  // 堆叠数据标签头上的数据颜色
+                enabled: true,
+                style: {
+                    fontWeight: 'none',
+                    color: 'white',
+                    textOutline: 'none',
+                    shadow: false
+                }
+            }
+        },
+        series: [
+            {
+                name: '订单数',
+                data: [90, 80, 200, 300, 350, 300, 280, 400, 350, 300, 150,100]
+            }
+        ]
+    });
+    
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        //$(document).ajaxStart(function () {
+        //    //  var wait = '<div class="loading" id="waitting">正在努力加载数据...</div>';
+        //    $('body').append('<div class="loading" id="waitting">正在努力加载数据...</div>');
+        //    $('body').find('#waitting').css('top', $(document).scrollTop() + $(window).height() / 2 - 28 + 'px');
+        //    $('body').find('#waitting').css('left', $(document).scrollLeft() + $(window).width() / 2 - 110 + 'px');
+        //}).ajaxStop(function () {
+        //    $('body').find('#waitting').remove();
+        //});
+
+
+        //loadProJindudata();
+
+    });
+    var mytime;
+    function showloading() {
+        $('body').append('<div class="loading" id="waitting">正在努力加载数据...</div>');
+        $('body').find('#waitting').css('top', $(document).scrollTop() + $(window).height() / 2 - 28 + 'px');
+        $('body').find('#waitting').css('left', $(document).scrollLeft() + $(window).width() / 2 - 110 + 'px');
+    }
+    function hideloading() {
+        $('body').find('#waitting').remove();
+    }
+    function loadProJindudata() {
+        $.ajax({
+            type: "get",
+            url: "getcf.aspx?id=2",
+            dataType: 'json',
+            //data: $("form#form1").serialize(),
+            timeout: 60000, //超时时间 毫秒
+            //                         dataType:'text', //后台返回的数据类型
+            beforeSend: function () {
+                showloading();
+            },
+            success: function (msg) {
+
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                hideloading();
+                data = eval('(' + XMLHttpRequest.responseText + ')');
+                //alert(data.hzdata);
+                chart.xAxis[0].setCategories(data.categories);
+                $("#hztd").append(data.hzdata);
+                for (i = 0; i < data.series.length; i++) {
+                    chart.addSeries(data.series[i]);
+                }
+                $("#shijian").html(data.shijian);
+                loadGWCountdata2();
+            }
+        });
+    }
+
+    //loadProJindudata();
+
+    function loadGWCountdata2() {
+        $.ajax({
+            type: "get",
+            url: "cfgangwei.aspx?id=1",
+            dataType: 'json',
+            //data: $("form#form1").serialize(),
+            timeout: 60000, //超时时间 毫秒
+            //                         dataType:'text', //后台返回的数据类型
+            beforeSend: function () {
+                showloading();
+            },
+            success: function (msg) {
+
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                hideloading();
+                data = eval('(' + XMLHttpRequest.responseText + ')');
+                //alert(data.allcount);
+                chart2.series[0].setData(data.allcount, true, true);
+                //for (i = 0; i < data.allcount.length; i++) {
+                //    //alert(data.allcount[i]);
+                //    chart1.addSeries(data.allcount[i],true);
+                //}
+                //chart1.addSeries(data.allcount);
+                //var targetObj = $(sss).appendTo("#hztd");
+                //$.parser.parse(targetObj);
+                loadGWCountdata3();
+            }
+        });
+    }
+
+    function loadGWCountdata3() {
+        $.ajax({
+            type: "get",
+            url: "cfgangwei.aspx?id=2",
+            dataType: 'json',
+            //data: $("form#form1").serialize(),
+            timeout: 60000, //超时时间 毫秒
+            //                         dataType:'text', //后台返回的数据类型
+            beforeSend: function () {
+                showloading();
+            },
+            success: function (msg) {
+
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                hideloading();
+                data = eval('(' + XMLHttpRequest.responseText + ')');
+                //alert(data.allcount);
+                chart3.series[0].setData(data.allcount, true, true);
+                //for (i = 0; i < data.allcount.length; i++) {
+                //    //alert(data.allcount[i]);
+                //    chart1.addSeries(data.allcount[i],true);
+                //}
+                //chart1.addSeries(data.allcount);
+                //var targetObj = $(sss).appendTo("#hztd");
+                //$.parser.parse(targetObj);
+                loadGWCountdata5();
+            }
+        });
+    }
+
+
+    function loadGWCountdata5() {
+        $.ajax({
+            type: "get",
+            url: "cfgangwei.aspx?id=4",
+            dataType: 'json',
+            //data: $("form#form1").serialize(),
+            timeout: 60000, //超时时间 毫秒
+            //                         dataType:'text', //后台返回的数据类型
+            beforeSend: function () {
+                showloading();
+            },
+            success: function (msg) {
+
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                hideloading();
+                ss = XMLHttpRequest.responseText;
+
+                if (ss == "") {
+                    mytime = setTimeout("loadlist2()", 10000);
+                    return;
+                }
+                data = eval('(' + ss + ')');
+                for (i = 0; i < data.series.length; i++) {
+                    //alert(data.allcount[i]);
+                    chart5.addSeries(data.series[i], true);
+                }
+                mytime = setTimeout("loadlist2()", 30000);
+            }
+        });
+    }
+
+    function loadlist2() {
+        clearTimeout(mytime);
+        window.location.href = "showList.html";
+    }
+</script>

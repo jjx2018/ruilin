@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>        物料标识卡    </title>
+    <style media="print">
+        /* 应用这个样式的在打印时隐藏 */
+
+        .noPrint {
+            display: none;
+        }
+        /* 应用这个样式的，从那个标签结束开始另算一页，之后在遇到再起一页，以此类推 */
+
+        .page {
+            page-break-after: always;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            background-color: gray;
+            
+            
+        }
+
+        table {
+            background-color: white;
+        }
+
+        .barcode {
+            text-align: center;
+            height: 80px;
+            font-family: Telen128Bar;
+            font-size: 50px;
+            padding: 10px 0 10px 0px;
+        }
+
+        #nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            color: #000;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav" class="noPrint">
+        <div style="background-color: navy;width:150px;margin:0px auto;color:#fff;">
+            <span style="font-size: 20px;">张数：0</span>
+            <input type="button" class="noPrint" height="30" value="打印" onclick="window.print();" />
+        </div>
+    </div>
+    <div style="width:100%;padding:0px; background-color:#fff;">
+        <table cellpadding="0" cellspacing="0" style="border:0px solid #000;width:95%;margin:0px auto;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center; font-size: 26px; height: 30px; line-height: 30px; font-weight:bold; padding:20px 0px 10px 0px;"> 锐麟铝制品有限公司 </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; font-size: 26px; height: 30px; line-height:30px; font-weight:bold; padding:20px 0px 10px 0px;"> 领料单 </td>
+                </tr>
+            </tbody>
+        </table>
+        <table cellpadding="0" cellspacing="0" style="border:1px solid #000;width:95%;margin:0px auto;">
+            <tbody>
+                <tr>
+                    <td align="right" style="height: 30px;padding-left:10px;" colspan="1"> 领料单号： <br /> </td>
+                    <td colspan="3"> PR202003060001 </td>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="2"> 主件品号： <br /> </td>
+                    <td colspan="3"> RL-S41006B </td>
+                </tr>
+                <tr>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="1"> 领料日期： <br /> </td>
+                    <td colspan="3"> 2020/3/6 14:14:57 </td>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="2"> 数量： <br /> </td>
+                    <td colspan="3"> 190 </td>
+                </tr>
+                <tr>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="1"> 经办人： <br /> </td>
+                    <td colspan="3"> 超级管理员 </td>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="2"> 销售订单： <br /> </td>
+                    <td colspan="3"> RL3220000003 </td>
+                </tr>
+                <tr>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="1"> 备注： <br /> </td>
+                    <td colspan="3"> </td>
+                    <td align="right" style="height: 30px; padding-left: 10px;" colspan="2"> 审核码： <br /> </td>
+                    <td colspan="3"> 审核 </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width: 95%; border: 1px solid black;margin:0px auto;" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr style="text-align:center;height:25px;">
+                    <th style="width:10%;" class="b_b_r">子件品号</th>
+                    <th style="width:15%;" class="b_b_r">品名</th>
+                    <th style="width:15%;" class="b_b_r">规格</th>
+                    <th style="width:10%;" class="b_b_r">领料仓</th>
+                    <th style="width:10%;" class="b_b_r">现场仓</th>
+                    <th style="width:10%;" class="b_b_r">单位</th>
+                    <th style="width:20%;" class="b_b_r">预计用量</th>
+                    <th style="width:20%;" colspan="2" class="b_b">领料数量</th>
+                </tr>
+                <tr>
+                    <td class="b_b_r">3007008</td>
+                    <td class="b_b_r">扁铁条</td>
+                    <td class="b_b_r">W55*T1.8*L1200mm</td>
+                    <td class="b_b_r"></td>
+                    <td class="b_b_r"></td>
+                    <td class="b_b_r"></td>
+                    <td class="b_b_r">90</td>
+                    <td class="b_b_r"></td>
+                    <td class="b_b"></td>
+                </tr>
+                <tr>
+                    <td class="b_r">HE0166-101</td>
+                    <td class="b_r">束仔</td>
+                    <td class="b_r">1*W20mm(L1160*W55*T1.8mm)</td>
+                    <td class="b_r"></td>
+                    <td class="b_r"></td>
+                    <td class="b_r"></td>
+                    <td class="b_r">190</td>
+                    <td class="b_r"></td>
+                    <td class=""></td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width:95%;margin:0px auto;">
+            <tbody>
+                <tr>
+                    <td style="text-align:center;width:50px;">白联：</td>
+                    <td style="text-align:left;width:15%;">仓库</td>
+                    <td style="width: 50px; text-align: center;">红联：</td>
+                    <td style="text-align: left; width: 15%;">财务</td>
+                    <td style="width:100px;text-align:right;">黄联：</td>
+                    <td style="text-align:left;">生产单位</td>
+                    <td style="width:200px;text-align:right;">篮联：</td>
+                    <td style="text-align:left;width:10%;">生管</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;width:50px;">核准：</td>
+                    <td></td>
+                    <td style="width: 50px; text-align: center;">仓库：</td>
+                    <td></td>
+                    <td style="width:100px;text-align:right;">主管审核：</td>
+                    <td></td>
+                    <td style="width:100px;text-align:right;">物料员：</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

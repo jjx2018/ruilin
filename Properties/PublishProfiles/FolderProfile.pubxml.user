@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>F:\AppBoxPro-20200428\AppBoxPro\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AccountMag/AccountCheck.aspx">
+      <publishTime>02/28/2020 15:12:44</publishTime>
+    </File>
+    <File Include="AccountMag/AccountOrderPrice.aspx">
+      <publishTime>03/03/2020 18:04:49</publishTime>
+    </File>
+    <File Include="admin/changepassword.aspx">
+      <publishTime>09/03/2018 11:58:48</publishTime>
+    </File>
+    <File Include="admin/config.aspx">
+      <publishTime>10/12/2019 17:32:02</publishTime>
+    </File>
+    <File Include="admin/default.aspx">
+      <publishTime>01/01/2020 18:37:35</publishTime>
+    </File>
+    <File Include="admin/dept.aspx">
+      <publishTime>04/08/2018 17:49:11</publishTime>
+    </File>
+    <File Include="admin/dept_edit.aspx">
+      <publishTime>01/17/2018 14:33:03</publishTime>
+    </File>
+    <File Include="admin/dept_new.aspx">
+      <publishTime>01/17/2018 14:33:03</publishTime>
+    </File>
+    <File Include="admin/dept_user.aspx">
+      <publishTime>04/08/2018 17:49:11</publishTime>
+    </File>
+    <File Include="admin/dept_user_addnew.aspx">
+      <publishTime>09/01/2018 17:47:06</publishTime>
+    </File>
+    <File Include="admin/help/help.htm">
+      <publishTime>05/10/2012 10:27:02</publishTime>
+    </File>
+    <File Include="admin/help/jisuanqi.htm">
+      <publishTime>01/17/2014 18:22:16</publishTime>
+    </File>
+    <File Include="admin/help/wannianli.htm">
+      <publishTime>05/10/2012 10:27:02</publishTime>
+    </File>
+    <File Include="admin/log.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/log_view.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/menu.aspx">
+      <publishTime>04/08/2018 17:48:36</publishTime>
+    </File>
+    <File Include="admin/menu_edit.aspx">
+      <publishTime>01/17/2018 15:42:46</publishTime>
+    </File>
+    <File Include="admin/menu_new.aspx">
+      <publishTime>01/17/2018 21:02:07</publishTime>
+    </File>
+    <File Include="admin/online.aspx">
+      <publishTime>04/08/2018 17:50:59</publishTime>
+    </File>
+    <File Include="admin/power.aspx">
+      <publishTime>04/08/2018 17:49:18</publishTime>
+    </File>
+    <File Include="admin/power_edit.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/power_new.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/role.aspx">
+      <publishTime>04/08/2018 17:49:18</publishTime>
+    </File>
+    <File Include="admin/role_edit.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/role_new.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/role_power.aspx">
+      <publishTime>01/17/2018 15:24:56</publishTime>
+    </File>
+    <File Include="admin/role_user.aspx">
+      <publishTime>04/08/2018 17:49:18</publishTime>
+    </File>
+    <File Include="admin/role_user_addnew.aspx">
+      <publishTime>09/01/2018 17:49:41</publishTime>
+    </File>
+    <File Include="admin/test.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/themes.aspx">
+      <publishTime>01/17/2018 20:59:26</publishTime>
+    </File>
+    <File Include="admin/title.aspx">
+      <publishTime>04/08/2018 17:49:11</publishTime>
+    </File>
+    <File Include="admin/title_edit.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/title_new.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/title_user.aspx">
+      <publishTime>04/08/2018 17:49:11</publishTime>
+    </File>
+    <File Include="admin/title_user_addnew.aspx">
+      <publishTime>09/01/2018 17:49:51</publishTime>
+    </File>
+    <File Include="admin/user.aspx">
+      <publishTime>04/09/2018 17:47:45</publishTime>
+    </File>
+    <File Include="admin/user_changepassword.aspx">
+      <publishTime>01/17/2018 14:33:04</publishTime>
+    </File>
+    <File Include="admin/user_edit.aspx">
+      <publishTime>01/17/2018 21:02:27</publishTime>
+    </File>
+    <File Include="admin/user_new.aspx">
+      <publishTime>01/17/2018 21:02:25</publishTime>
+    </File>
+    <File Include="admin/user_select_dept.aspx">
+      <publishTime>01/18/2018 15:05:34</publishTime>
+    </File>
+    <File Include="admin/user_select_role.aspx">
+      <publishTime>01/18/2018 14:48:51</publishTime>
+    </File>
+    <File Include="admin/user_select_title.aspx">
+      <publishTime>01/17/2018 21:01:31</publishTime>
+    </File>
+    <File Include="admin/user_view.aspx">
+      <publishTime>01/17/2018 14:33:05</publishTime>
+    </File>
+    <File Include="BaseDataMag/BaseDataMag.aspx">
+      <publishTime>04/04/2020 18:38:55</publishTime>
+    </File>
+    <File Include="BaseDataMag/MainFromMag.aspx">
+      <publishTime>04/04/2020 17:33:15</publishTime>
+    </File>
+    <File Include="BaseDataMag/StoreMag.aspx">
+      <publishTime>02/28/2020 16:10:30</publishTime>
+    </File>
+    <File Include="bin/AppBoxPro.dll">
+      <publishTime>04/28/2020 18:27:32</publishTime>
+    </File>
+    <File Include="bin/AppBoxPro.pdb">
+      <publishTime>04/28/2020 18:27:32</publishTime>
+    </File>
+    <File Include="bin/BarcodeLibCF.dll">
+      <publishTime>01/25/2014 18:54:32</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/01/2018 17:55:08</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.Extended.dll">
+      <publishTime>09/01/2018 17:58:25</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.Extended.dll.config">
+      <publishTime>09/01/2018 17:58:25</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.Extended.pdb">
+      <publishTime>09/01/2018 17:58:25</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/01/2018 17:55:08</publishTime>
+    </File>
+    <File Include="bin/FineUIPro.dll">
+      <publishTime>01/06/2020 16:05:08</publishTime>
+    </File>
+    <File Include="bin/IDAutomation.DataBarFontEncoder.dll">
+      <publishTime>07/11/2017 05:12:00</publishTime>
+    </File>
+    <File Include="bin/IDAutomation.IntelligentMail.dll">
+      <publishTime>05/11/2012 23:03:24</publishTime>
+    </File>
+    <File Include="bin/IDAutomation.NetAssembly.dll">
+      <publishTime>08/01/2009 03:32:56</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>05/04/2016 15:17:53</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>05/04/2016 15:17:53</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/06/2014 06:52:50</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>09/07/2018 10:49:29</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>09/07/2018 10:49:29</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/01/2018 17:55:02</publishTime>
+    </File>
+    <File Include="bin/SQLHelper.dll">
+      <publishTime>04/14/2020 11:40:49</publishTime>
+    </File>
+    <File Include="bin/SQLHelper.pdb">
+      <publishTime>04/14/2020 11:40:49</publishTime>
+    </File>
+    <File Include="bin/ThoughtWorks.QRCode.dll">
+      <publishTime>10/12/2013 10:34:23</publishTime>
+    </File>
+    <File Include="bin/zxing.dll">
+      <publishTime>02/18/2018 16:32:21</publishTime>
+    </File>
+    <File Include="bin/zxing.pdb">
+      <publishTime>02/18/2018 16:32:21</publishTime>
+    </File>
+    <File Include="bin/zxing.presentation.dll">
+      <publishTime>02/18/2018 16:32:21</publishTime>
+    </File>
+    <File Include="bin/zxing.presentation.pdb">
+      <publishTime>02/18/2018 16:32:21</publishTime>
+    </File>
+    <File Include="board/maginstructionboard.aspx">
+      <publishTime>04/13/2020 12:53:05</publishTime>
+    </File>
+    <File Include="board/qitaoboard.aspx">
+      <publishTime>04/25/2020 09:15:57</publishTime>
+    </File>
+    <File Include="BomMag/addRemark.aspx">
+      <publishTime>02/28/2020 15:39:29</publishTime>
+    </File>
+    <File Include="BomMag/magProjectBom.aspx">
+      <publishTime>03/11/2020 20:51:09</publishTime>
+    </File>
+    <File Include="BomMag/ProduceBom.aspx">
+      <publishTime>03/01/2020 18:10:50</publishTime>
+    </File>
+    <File Include="BomMag/ProduceBomDetail.aspx">
+      <publishTime>04/17/2020 17:06:04</publishTime>
+    </File>
+    <File Include="BomMag/ProduceBomHead.aspx">
+      <publishTime>04/06/2020 16:39:47</publishTime>
+    </File>
+    <File Include="BomMag/ProjectBomDetail.aspx">
+      <publishTime>04/04/2020 22:40:26</publishTime>
+    </File>
+    <File Include="BomMag/ProjectBomHead.aspx">
+      <publishTime>04/17/2020 16:57:24</publishTime>
+    </File>
+    <File Include="BomMag/RealBom.aspx">
+      <publishTime>04/08/2020 22:02:28</publishTime>
+    </File>
+    <File Include="BomMag/showErr.aspx">
+      <publishTime>03/03/2020 14:50:50</publishTime>
+    </File>
+    <File Include="ClientMag/Clientedit.aspx">
+      <publishTime>03/15/2020 21:58:19</publishTime>
+    </File>
+    <File Include="ClientMag/ClientNew.aspx">
+      <publishTime>03/15/2020 21:57:55</publishTime>
+    </File>
+    <File Include="ClientMag/magClient.aspx">
+      <publishTime>03/29/2020 18:59:35</publishTime>
+    </File>
+    <File Include="ClientProviderMag/CPPlan.aspx">
+      <publishTime>04/24/2020 18:29:55</publishTime>
+    </File>
+    <File Include="ClientProviderMag/magCPOrder.aspx">
+      <publishTime>04/02/2020 12:50:24</publishTime>
+    </File>
+    <File Include="ClientProviderMag/magCPOrderDetail.aspx">
+      <publishTime>04/04/2020 14:39:36</publishTime>
+    </File>
+    <File Include="ClientProviderMag/magCPOrderHeader.aspx">
+      <publishTime>04/04/2020 14:33:04</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>03/05/2020 08:30:41</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/17/2018 14:33:05</publishTime>
+    </File>
+    <File Include="js/jquery-3.3.1.min.js">
+      <publishTime>11/23/2019 23:27:18</publishTime>
+    </File>
+    <File Include="js/jsmqtt.html">
+      <publishTime>11/23/2019 15:16:31</publishTime>
+    </File>
+    <File Include="js/MqttX.js">
+      <publishTime>11/23/2019 15:16:17</publishTime>
+    </File>
+    <File Include="js/notify_group.js">
+      <publishTime>01/01/2020 15:03:32</publishTime>
+    </File>
+    <File Include="main.aspx">
+      <publishTime>04/04/2020 23:52:18</publishTime>
+    </File>
+    <File Include="MaterialFinish/MaterialFinish.aspx">
+      <publishTime>04/18/2020 14:57:38</publishTime>
+    </File>
+    <File Include="MaterialFinish/showDetail.aspx">
+      <publishTime>04/18/2020 15:14:42</publishTime>
+    </File>
+    <File Include="MaterialMag/LooKProduction.aspx">
+      <publishTime>02/28/2020 16:21:58</publishTime>
+    </File>
+    <File Include="MaterialMag/magAllitem.aspx">
+      <publishTime>04/24/2020 21:20:04</publishTime>
+    </File>
+    <File Include="MaterialMag/showProcess.aspx">
+      <publishTime>04/24/2020 22:09:26</publishTime>
+    </File>
+    <File Include="Mobile/choosejob.aspx">
+      <publishTime>04/28/2020 18:20:10</publishTime>
+    </File>
+    <File Include="Mobile/login.aspx">
+      <publishTime>04/21/2020 16:48:05</publishTime>
+    </File>
+    <File Include="Mobile/maginstruction.aspx">
+      <publishTime>03/17/2020 10:13:25</publishTime>
+    </File>
+    <File Include="Mobile/product.aspx">
+      <publishTime>04/21/2020 17:09:25</publishTime>
+    </File>
+    <File Include="Mobile/ProductInstock.aspx">
+      <publishTime>04/28/2020 15:33:14</publishTime>
+    </File>
+    <File Include="Mobile/ProductInstockCheck.aspx">
+      <publishTime>04/28/2020 18:09:18</publishTime>
+    </File>
+    <File Include="Mobile/PurchaseCheck.aspx">
+      <publishTime>04/21/2020 16:09:51</publishTime>
+    </File>
+    <File Include="Mobile/PurchaseInstock.aspx">
+      <publishTime>04/21/2020 16:23:01</publishTime>
+    </File>
+    <File Include="Mobile/PurchasePick.aspx">
+      <publishTime>04/21/2020 16:05:59</publishTime>
+    </File>
+    <File Include="Mobile/weiwaiinstock.aspx">
+      <publishTime>04/07/2020 20:22:21</publishTime>
+    </File>
+    <File Include="Mobile/weiwaioutstock.aspx">
+      <publishTime>04/07/2020 20:30:55</publishTime>
+    </File>
+    <File Include="Model/BOM.xls">
+      <publishTime>12/05/2019 20:37:15</publishTime>
+    </File>
+    <File Include="Model/CPLabHtml.html">
+      <publishTime>04/02/2020 12:54:25</publishTime>
+    </File>
+    <File Include="Model/CPOrderContent.html">
+      <publishTime>03/08/2020 17:17:39</publishTime>
+    </File>
+    <File Include="Model/CPOrderFoot.html">
+      <publishTime>03/08/2020 17:17:49</publishTime>
+    </File>
+    <File Include="Model/CPOrderHead.html">
+      <publishTime>04/14/2020 21:06:16</publishTime>
+    </File>
+    <File Include="Model/HtmlPage1.html">
+      <publishTime>03/06/2020 18:10:29</publishTime>
+    </File>
+    <File Include="Model/instructionLab.html">
+      <publishTime>04/14/2020 20:56:29</publishTime>
+    </File>
+    <File Include="Model/labHeader.html">
+      <publishTime>02/14/2020 15:02:07</publishTime>
+    </File>
+    <File Include="Model/mylabel-bak.html">
+      <publishTime>02/13/2020 23:30:26</publishTime>
+    </File>
+    <File Include="Model/mylabel.html">
+      <publishTime>02/14/2020 10:57:52</publishTime>
+    </File>
+    <File Include="Model/OutStock.html">
+      <publishTime>08/25/2018 12:18:39</publishTime>
+    </File>
+    <File Include="Model/PrinterSet.html">
+      <publishTime>03/07/2020 17:30:28</publishTime>
+    </File>
+    <File Include="Model/ProduceLabHtml.html">
+      <publishTime>04/02/2020 12:25:40</publishTime>
+    </File>
+    <File Include="Model/ProduceOrder-bak.html">
+      <publishTime>03/06/2020 14:39:32</publishTime>
+    </File>
+    <File Include="Model/ProduceOrderContent.html">
+      <publishTime>03/06/2020 18:39:45</publishTime>
+    </File>
+    <File Include="Model/ProduceOrderFoot.html">
+      <publishTime>03/08/2020 18:40:36</publishTime>
+    </File>
+    <File Include="Model/ProduceOrderHead.html">
+      <publishTime>04/14/2020 21:06:53</publishTime>
+    </File>
+    <File Include="Model/PurchaseLabHtml.html">
+      <publishTime>04/14/2020 20:45:41</publishTime>
+    </File>
+    <File Include="Model/PurchaseLabPdf.html">
+      <publishTime>02/13/2020 21:14:21</publishTime>
+    </File>
+    <File Include="Model/PurchaseOrder.html">
+      <publishTime>01/17/2020 21:17:57</publishTime>
+    </File>
+    <File Include="Model/PurchaseOrderContent.html">
+      <publishTime>04/14/2020 21:00:22</publishTime>
+    </File>
+    <File Include="Model/PurchaseOrderFoot.html">
+      <publishTime>03/07/2020 22:31:42</publishTime>
+    </File>
+    <File Include="Model/PurchaseOrderHead.html">
+      <publishTime>04/14/2020 20:57:43</publishTime>
+    </File>
+    <File Include="Model/SendOutLabHtml.html">
+      <publishTime>04/02/2020 18:12:34</publishTime>
+    </File>
+    <File Include="Model/SendOutOrder.html">
+      <publishTime>03/08/2020 17:59:47</publishTime>
+    </File>
+    <File Include="Model/SendOutOrderContent.html">
+      <publishTime>03/08/2020 18:12:39</publishTime>
+    </File>
+    <File Include="Model/SendOutOrderFoot.html">
+      <publishTime>03/08/2020 18:15:11</publishTime>
+    </File>
+    <File Include="Model/SendOutOrderHead.html">
+      <publishTime>04/14/2020 21:07:25</publishTime>
+    </File>
+    <File Include="Model/timg.jpg">
+      <publishTime>02/13/2020 15:46:11</publishTime>
+    </File>
+    <File Include="mqtt/gettest.aspx">
+      <publishTime>11/25/2019 11:13:14</publishTime>
+    </File>
+    <File Include="mqtt/subscribe.html">
+      <publishTime>11/23/2019 23:27:45</publishTime>
+    </File>
+    <File Include="mqtt/t.html">
+      <publishTime>11/25/2019 11:16:51</publishTime>
+    </File>
+    <File Include="mqtt/test.html">
+      <publishTime>11/23/2019 23:27:59</publishTime>
+    </File>
+    <File Include="OrderMag/CheckOrder.aspx">
+      <publishTime>02/28/2020 15:25:04</publishTime>
+    </File>
+    <File Include="OrderMag/ClientOrder.aspx">
+      <publishTime>03/01/2020 18:14:57</publishTime>
+    </File>
+    <File Include="OrderMag/magOrder.aspx">
+      <publishTime>03/01/2020 18:15:33</publishTime>
+    </File>
+    <File Include="OrderMag/magOrderDetail.aspx">
+      <publishTime>04/15/2020 20:50:18</publishTime>
+    </File>
+    <File Include="OrderMag/magOrderHeader.aspx">
+      <publishTime>04/15/2020 20:45:40</publishTime>
+    </File>
+    <File Include="OrderMag/OrderDetailedit.aspx">
+      <publishTime>02/28/2020 15:03:15</publishTime>
+    </File>
+    <File Include="OrderMag/OrderDetailNew.aspx">
+      <publishTime>02/28/2020 15:07:26</publishTime>
+    </File>
+    <File Include="OrderMag/Order_Edit.aspx">
+      <publishTime>02/28/2020 15:10:33</publishTime>
+    </File>
+    <File Include="OrderMag/Order_New.aspx">
+      <publishTime>03/17/2020 16:07:54</publishTime>
+    </File>
+    <File Include="OrderMag/searchitem.aspx">
+      <publishTime>03/02/2020 15:24:37</publishTime>
+    </File>
+    <File Include="OrderMag/showNewOrder.aspx">
+      <publishTime>03/01/2020 18:16:26</publishTime>
+    </File>
+    <File Include="other/magNotice.aspx">
+      <publishTime>02/06/2020 17:57:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/07/2018 10:49:32</publishTime>
+    </File>
+    <File Include="PlanMag/makePlan.aspx">
+      <publishTime>04/24/2020 15:47:37</publishTime>
+    </File>
+    <File Include="PlanMag/StockConfirm.aspx">
+      <publishTime>03/01/2020 18:18:05</publishTime>
+    </File>
+    <File Include="PlanMag/StockConfirmDetail.aspx">
+      <publishTime>03/06/2020 09:36:44</publishTime>
+    </File>
+    <File Include="PlanMag/StockConfirmHeader.aspx">
+      <publishTime>04/01/2020 22:10:01</publishTime>
+    </File>
+    <File Include="ProduceMag/magProduceOrder.aspx">
+      <publishTime>04/02/2020 11:40:38</publishTime>
+    </File>
+    <File Include="ProduceMag/magProduceOrderDetail.aspx">
+      <publishTime>04/04/2020 17:01:23</publishTime>
+    </File>
+    <File Include="ProduceMag/magProduceOrderHeader.aspx">
+      <publishTime>04/04/2020 16:53:34</publishTime>
+    </File>
+    <File Include="ProduceMag/ProPlan.aspx">
+      <publishTime>04/24/2020 18:31:48</publishTime>
+    </File>
+    <File Include="product/ProductInStock.aspx">
+      <publishTime>04/28/2020 17:02:45</publishTime>
+    </File>
+    <File Include="product/ProductInStockList.aspx">
+      <publishTime>04/28/2020 17:05:42</publishTime>
+    </File>
+    <File Include="product/ProductInStockListSale.aspx">
+      <publishTime>04/28/2020 17:40:39</publishTime>
+    </File>
+    <File Include="product/ProductRec.aspx">
+      <publishTime>03/16/2020 17:21:50</publishTime>
+    </File>
+    <File Include="product/ProductRecList.aspx">
+      <publishTime>03/30/2020 18:11:32</publishTime>
+    </File>
+    <File Include="product/ProductRec_c.aspx">
+      <publishTime>03/16/2020 17:42:16</publishTime>
+    </File>
+    <File Include="ProviderMag/lookMaterial.aspx">
+      <publishTime>03/03/2020 09:41:38</publishTime>
+    </File>
+    <File Include="ProviderMag/magProvider.aspx">
+      <publishTime>04/01/2020 15:32:59</publishTime>
+    </File>
+    <File Include="ProviderMag/ProviderEdit.aspx">
+      <publishTime>02/29/2020 23:13:09</publishTime>
+    </File>
+    <File Include="ProviderMag/Providernew.aspx">
+      <publishTime>02/29/2020 22:41:02</publishTime>
+    </File>
+    <File Include="pub/Instock.html">
+      <publishTime>01/01/2020 18:35:17</publishTime>
+    </File>
+    <File Include="pub/Outstock.html">
+      <publishTime>01/01/2020 18:35:17</publishTime>
+    </File>
+    <File Include="pub/ProducePlan.html">
+      <publishTime>01/01/2020 18:38:43</publishTime>
+    </File>
+    <File Include="pub/PurchasePlan.html">
+      <publishTime>01/01/2020 18:38:56</publishTime>
+    </File>
+    <File Include="pub/SendOut.html">
+      <publishTime>01/01/2020 18:39:23</publishTime>
+    </File>
+    <File Include="pub/showNotice.aspx">
+      <publishTime>01/01/2020 18:41:13</publishTime>
+    </File>
+    <File Include="pub/showOrders.html">
+      <publishTime>01/01/2020 18:19:20</publishTime>
+    </File>
+    <File Include="pub/waitConfirm.html">
+      <publishTime>01/01/2020 18:30:46</publishTime>
+    </File>
+    <File Include="PurchaseMag/ItemPurSelfUse.aspx">
+      <publishTime>04/04/2020 17:15:10</publishTime>
+    </File>
+    <File Include="PurchaseMag/magPurchaseOrder.aspx">
+      <publishTime>04/02/2020 12:35:33</publishTime>
+    </File>
+    <File Include="PurchaseMag/magPurchaseOrderDetail.aspx">
+      <publishTime>04/04/2020 10:04:29</publishTime>
+    </File>
+    <File Include="PurchaseMag/magPurchaseOrderHeader.aspx">
+      <publishTime>04/04/2020 17:06:49</publishTime>
+    </File>
+    <File Include="PurchaseMag/PurPlan.aspx">
+      <publishTime>04/24/2020 18:10:15</publishTime>
+    </File>
+    <File Include="res/css/main.css">
+      <publishTime>04/09/2018 18:36:31</publishTime>
+    </File>
+    <File Include="res/images/my_face_80.jpg">
+      <publishTime>07/15/2009 12:44:08</publishTime>
+    </File>
+    <File Include="res/images/themes/black_tie.png">
+      <publishTime>10/10/2014 11:27:30</publishTime>
+    </File>
+    <File Include="res/images/themes/blitzer.png">
+      <publishTime>10/10/2014 11:27:47</publishTime>
+    </File>
+    <File Include="res/images/themes/bootstrap_pure.png">
+      <publishTime>03/04/2016 18:07:44</publishTime>
+    </File>
+    <File Include="res/images/themes/cupertino.png">
+      <publishTime>10/10/2014 11:27:51</publishTime>
+    </File>
+    <File Include="res/images/themes/customtheme.png">
+      <publishTime>12/08/2017 11:07:36</publishTime>
+    </File>
+    <File Include="res/images/themes/custom_default.png">
+      <publishTime>03/04/2016 18:02:40</publishTime>
+    </File>
+    <File Include="res/images/themes/dark_hive.png">
+      <publishTime>10/10/2014 11:27:55</publishTime>
+    </File>
+    <File Include="res/images/themes/default.png">
+      <publishTime>10/10/2014 11:42:39</publishTime>
+    </File>
+    <File Include="res/images/themes/dot_luv.png">
+      <publishTime>10/10/2014 11:40:02</publishTime>
+    </File>
+    <File Include="res/images/themes/eggplant.png">
+      <publishTime>10/10/2014 11:28:05</publishTime>
+    </File>
+    <File Include="res/images/themes/excite_bike.png">
+      <publishTime>10/10/2014 11:28:08</publishTime>
+    </File>
+    <File Include="res/images/themes/flick.png">
+      <publishTime>10/10/2014 11:28:11</publishTime>
+    </File>
+    <File Include="res/images/themes/hot_sneaks.png">
+      <publishTime>10/10/2014 11:28:15</publishTime>
+    </File>
+    <File Include="res/images/themes/humanity.png">
+      <publishTime>10/10/2014 11:28:18</publishTime>
+    </File>
+    <File Include="res/images/themes/image_black_sky.png">
+      <publishTime>04/04/2017 14:43:23</publishTime>
+    </File>
+    <File Include="res/images/themes/image_blue_drip.png">
+      <publishTime>04/04/2017 14:44:23</publishTime>
+    </File>
+    <File Include="res/images/themes/image_blue_moon.png">
+      <publishTime>04/04/2017 14:45:32</publishTime>
+    </File>
+    <File Include="res/images/themes/image_blue_sky.png">
+      <publishTime>04/04/2017 14:46:36</publishTime>
+    </File>
+    <File Include="res/images/themes/image_blue_star.png">
+      <publishTime>04/04/2017 19:22:47</publishTime>
+    </File>
+    <File Include="res/images/themes/image_green_drip.png">
+      <publishTime>04/04/2017 19:24:35</publishTime>
+    </File>
+    <File Include="res/images/themes/image_green_lotus.png">
+      <publishTime>04/04/2017 19:25:14</publishTime>
+    </File>
+    <File Include="res/images/themes/image_green_poppy.png">
+      <publishTime>04/04/2017 19:27:07</publishTime>
+    </File>
+    <File Include="res/images/themes/image_green_rain.png">
+      <publishTime>04/04/2017 19:27:43</publishTime>
+    </File>
+    <File Include="res/images/themes/image_orange_light.png">
+      <publishTime>04/04/2017 19:38:03</publishTime>
+    </File>
+    <File Include="res/images/themes/image_purple_fog.png">
+      <publishTime>04/04/2017 19:28:39</publishTime>
+    </File>
+    <File Include="res/images/themes/image_red_dawn.png">
+      <publishTime>04/04/2017 19:53:00</publishTime>
+    </File>
+    <File Include="res/images/themes/le_frog.png">
+      <publishTime>10/10/2014 11:28:21</publishTime>
+    </File>
+    <File Include="res/images/themes/metro_blue.png">
+      <publishTime>10/10/2014 11:42:43</publishTime>
+    </File>
+    <File Include="res/images/themes/metro_dark_blue.png">
+      <publishTime>10/10/2014 11:42:50</publishTime>
+    </File>
+    <File Include="res/images/themes/metro_gray.png">
+      <publishTime>10/10/2014 11:42:54</publishTime>
+    </File>
+    <File Include="res/images/themes/metro_green.png">
+      <publishTime>10/10/2014 11:42:59</publishTime>
+    </File>
+    <File Include="res/images/themes/metro_orange.png">
+      <publishTime>10/10/2014 11:43:04</publishTime>
+    </File>
+    <File Include="res/images/themes/mint_choc.png">
+      <publishTime>10/10/2014 11:28:24</publishTime>
+    </File>
+    <File Include="res/images/themes/overcast.png">
+      <publishTime>10/10/2014 11:28:29</publishTime>
+    </File>
+    <File Include="res/images/themes/pepper_grinder.png">
+      <publishTime>10/10/2014 11:28:34</publishTime>
+    </File>
+    <File Include="res/images/themes/pure_black.png">
+      <publishTime>04/03/2017 22:26:23</publishTime>
+    </File>
+    <File Include="res/images/themes/pure_blue.png">
+      <publishTime>04/03/2017 22:28:21</publishTime>
+    </File>
+    <File Include="res/images/themes/pure_green.png">
+      <publishTime>04/03/2017 22:27:01</publishTime>
+    </File>
+    <File Include="res/images/themes/pure_orange.png">
+      <publishTime>04/03/2017 22:28:52</publishTime>
+    </File>
+    <File Include="res/images/themes/pure_purple.png">
+      <publishTime>04/03/2017 22:27:48</publishTime>
+    </File>
+    <File Include="res/images/themes/pure_red.png">
+      <publishTime>04/03/2017 22:29:14</publishTime>
+    </File>
+    <File Include="res/images/themes/redmond.png">
+      <publishTime>10/10/2014 11:28:39</publishTime>
+    </File>
+    <File Include="res/images/themes/small/black_tie.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/blitzer.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/bootstrap_pure.png">
+      <publishTime>03/04/2016 18:08:25</publishTime>
+    </File>
+    <File Include="res/images/themes/small/cupertino.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/customtheme.png">
+      <publishTime>12/08/2017 11:11:13</publishTime>
+    </File>
+    <File Include="res/images/themes/small/custom_default.png">
+      <publishTime>03/04/2016 18:02:16</publishTime>
+    </File>
+    <File Include="res/images/themes/small/dark_hive.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/default.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/dot_luv.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/eggplant.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/excite_bike.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/flick.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/hot_sneaks.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/humanity.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_black_sky.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_blue_drip.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_blue_moon.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_blue_sky.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_blue_star.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_green_drip.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_green_lotus.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_green_poppy.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_green_rain.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_orange_light.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_purple_fog.png">
+      <publishTime>04/04/2017 19:31:04</publishTime>
+    </File>
+    <File Include="res/images/themes/small/image_red_dawn.png">
+      <publishTime>04/04/2017 19:53:42</publishTime>
+    </File>
+    <File Include="res/images/themes/small/le_frog.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/metro_blue.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/metro_dark_blue.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/metro_gray.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/metro_green.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/metro_orange.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/mint_choc.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/overcast.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pepper_grinder.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pure_black.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pure_blue.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pure_green.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pure_orange.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pure_purple.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/pure_red.png">
+      <publishTime>04/04/2017 19:40:12</publishTime>
+    </File>
+    <File Include="res/images/themes/small/redmond.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/smoothness.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/south_street.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/start.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/sunny.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/swanky_purse.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/trontastic.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/ui_darkness.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/ui_lightness.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/small/vader.png">
+      <publishTime>10/10/2014 11:47:27</publishTime>
+    </File>
+    <File Include="res/images/themes/smoothness.png">
+      <publishTime>10/10/2014 11:28:43</publishTime>
+    </File>
+    <File Include="res/images/themes/south_street.png">
+      <publishTime>10/10/2014 11:28:47</publishTime>
+    </File>
+    <File Include="res/images/themes/start.png">
+      <publishTime>10/10/2014 11:28:51</publishTime>
+    </File>
+    <File Include="res/images/themes/sunny.png">
+      <publishTime>10/10/2014 11:28:56</publishTime>
+    </File>
+    <File Include="res/images/themes/swanky_purse.png">
+      <publishTime>10/10/2014 11:36:25</publishTime>
+    </File>
+    <File Include="res/images/themes/trontastic.png">
+      <publishTime>10/10/2014 11:29:15</publishTime>
+    </File>
+    <File Include="res/images/themes/ui_darkness.png">
+      <publishTime>10/10/2014 11:41:51</publishTime>
+    </File>
+    <File Include="res/images/themes/ui_lightness.png">
+      <publishTime>10/10/2014 11:29:22</publishTime>
+    </File>
+    <File Include="res/images/themes/vader.png">
+      <publishTime>10/10/2014 11:32:25</publishTime>
+    </File>
+    <File Include="res/themes/bootstrap_pure/theme.css">
+      <publishTime>11/30/2018 15:16:22</publishTime>
+    </File>
+    <File Include="res/themes/custom_default/theme.css">
+      <publishTime>11/30/2018 15:15:30</publishTime>
+    </File>
+    <File Include="res/themes/custom_light_green/theme.css">
+      <publishTime>11/30/2018 15:16:39</publishTime>
+    </File>
+    <File Include="res/themes/custom_light_green/theme.js">
+      <publishTime>12/08/2017 11:02:29</publishTime>
+    </File>
+    <File Include="res/themes/image_black_sky/sky.jpg">
+      <publishTime>04/04/2017 10:03:56</publishTime>
+    </File>
+    <File Include="res/themes/image_black_sky/theme.css">
+      <publishTime>04/01/2019 10:52:44</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_drip/drip.jpg">
+      <publishTime>04/04/2017 09:50:01</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_drip/theme.css">
+      <publishTime>04/01/2019 10:52:59</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_moon/moon.jpg">
+      <publishTime>04/04/2017 14:33:32</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_moon/theme.css">
+      <publishTime>04/01/2019 10:53:10</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_sky/sky.jpg">
+      <publishTime>04/04/2017 10:02:57</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_sky/theme.css">
+      <publishTime>04/01/2019 10:53:20</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_star/star.jpg">
+      <publishTime>04/04/2017 09:55:24</publishTime>
+    </File>
+    <File Include="res/themes/image_blue_star/theme.css">
+      <publishTime>04/01/2019 10:53:29</publishTime>
+    </File>
+    <File Include="res/themes/image_green_drip/drip.jpg">
+      <publishTime>04/03/2017 23:50:19</publishTime>
+    </File>
+    <File Include="res/themes/image_green_drip/theme.css">
+      <publishTime>04/01/2019 10:53:36</publishTime>
+    </File>
+    <File Include="res/themes/image_green_lotus/lotus.jpg">
+      <publishTime>04/04/2017 10:01:00</publishTime>
+    </File>
+    <File Include="res/themes/image_green_lotus/theme.css">
+      <publishTime>04/01/2019 10:53:42</publishTime>
+    </File>
+    <File Include="res/themes/image_green_poppy/poppy.jpg">
+      <publishTime>04/04/2017 11:14:14</publishTime>
+    </File>
+    <File Include="res/themes/image_green_poppy/theme.css">
+      <publishTime>04/01/2019 10:53:49</publishTime>
+    </File>
+    <File Include="res/themes/image_green_rain/rain.jpg">
+      <publishTime>04/03/2017 23:46:22</publishTime>
+    </File>
+    <File Include="res/themes/image_green_rain/theme.css">
+      <publishTime>04/01/2019 10:53:56</publishTime>
+    </File>
+    <File Include="res/themes/image_orange_light/light.jpg">
+      <publishTime>04/04/2017 19:35:45</publishTime>
+    </File>
+    <File Include="res/themes/image_orange_light/theme.css">
+      <publishTime>04/01/2019 10:54:03</publishTime>
+    </File>
+    <File Include="res/themes/image_purple_fog/fog.jpg">
+      <publishTime>04/04/2017 14:04:44</publishTime>
+    </File>
+    <File Include="res/themes/image_purple_fog/theme.css">
+      <publishTime>04/01/2019 10:54:10</publishTime>
+    </File>
+    <File Include="res/themes/image_red_dawn/dawn.jpg">
+      <publishTime>04/04/2017 19:51:34</publishTime>
+    </File>
+    <File Include="res/themes/image_red_dawn/theme.css">
+      <publishTime>04/01/2019 10:54:17</publishTime>
+    </File>
+    <File Include="res/themes/pure_black/theme.css">
+      <publishTime>04/01/2019 10:51:24</publishTime>
+    </File>
+    <File Include="res/themes/pure_blue/theme.css">
+      <publishTime>04/01/2019 10:54:30</publishTime>
+    </File>
+    <File Include="res/themes/pure_green/theme.css">
+      <publishTime>04/01/2019 10:54:37</publishTime>
+    </File>
+    <File Include="res/themes/pure_orange/theme.css">
+      <publishTime>04/01/2019 10:54:44</publishTime>
+    </File>
+    <File Include="res/themes/pure_purple/theme.css">
+      <publishTime>04/01/2019 10:54:53</publishTime>
+    </File>
+    <File Include="res/themes/pure_red/theme.css">
+      <publishTime>04/01/2019 10:54:59</publishTime>
+    </File>
+    <File Include="ruilin/searchBomForAdd.aspx">
+      <publishTime>02/16/2020 12:22:02</publishTime>
+    </File>
+    <File Include="ruilin/searchitemForAdd.aspx">
+      <publishTime>12/21/2019 15:50:18</publishTime>
+    </File>
+    <File Include="ruilin/showpdf.aspx">
+      <publishTime>02/14/2020 15:17:29</publishTime>
+    </File>
+    <File Include="SendOutMag/SendOutOrderDetail.aspx">
+      <publishTime>04/04/2020 14:28:25</publishTime>
+    </File>
+    <File Include="SendOutMag/SendOutOrderHeader.aspx">
+      <publishTime>04/04/2020 14:27:01</publishTime>
+    </File>
+    <File Include="SendOutMag/SendOutOrderSearch.aspx">
+      <publishTime>04/02/2020 18:04:07</publishTime>
+    </File>
+    <File Include="SendOutMag/SendOutPlanSearch.aspx">
+      <publishTime>04/24/2020 17:33:03</publishTime>
+    </File>
+    <File Include="stock/instock.aspx">
+      <publishTime>02/24/2020 10:21:50</publishTime>
+    </File>
+    <File Include="stock/instock_list.aspx">
+      <publishTime>02/28/2020 09:06:02</publishTime>
+    </File>
+    <File Include="stock/instock_new.aspx">
+      <publishTime>02/24/2020 10:17:02</publishTime>
+    </File>
+    <File Include="stock/instock_new_select.aspx">
+      <publishTime>02/24/2020 09:57:18</publishTime>
+    </File>
+    <File Include="stock/outstock.aspx">
+      <publishTime>04/02/2020 17:31:02</publishTime>
+    </File>
+    <File Include="stock/outstockbomselect.aspx">
+      <publishTime>04/02/2020 15:18:42</publishTime>
+    </File>
+    <File Include="stock/outstocklist.aspx">
+      <publishTime>04/10/2020 15:42:02</publishTime>
+    </File>
+    <File Include="stock/purchasecheck.aspx">
+      <publishTime>03/18/2020 14:13:18</publishTime>
+    </File>
+    <File Include="stock/purchaseinstock.aspx">
+      <publishTime>04/15/2020 11:55:36</publishTime>
+    </File>
+    <File Include="stock/purchaseinstockdetail.aspx">
+      <publishTime>04/10/2020 14:04:50</publishTime>
+    </File>
+    <File Include="stock/purchaseinstocklist.aspx">
+      <publishTime>04/15/2020 17:41:01</publishTime>
+    </File>
+    <File Include="stock/purchaseinstocklistsale.aspx">
+      <publishTime>03/30/2020 14:37:00</publishTime>
+    </File>
+    <File Include="stock/purchaseinstocknew.aspx">
+      <publishTime>03/30/2020 10:00:56</publishTime>
+    </File>
+    <File Include="stock/purchasesummary.aspx">
+      <publishTime>02/04/2020 16:47:20</publishTime>
+    </File>
+    <File Include="stock/purchasesummary_C.aspx">
+      <publishTime>02/03/2020 22:27:20</publishTime>
+    </File>
+    <File Include="stock/stocksummary.aspx">
+      <publishTime>02/28/2020 10:32:22</publishTime>
+    </File>
+    <File Include="stock/weiwaioutstock.aspx">
+      <publishTime>03/30/2020 18:10:08</publishTime>
+    </File>
+    <File Include="stock/weiwaioutstockdetail.aspx">
+      <publishTime>04/10/2020 14:04:50</publishTime>
+    </File>
+    <File Include="stock/weiwaioutstocklist.aspx">
+      <publishTime>04/10/2020 14:44:11</publishTime>
+    </File>
+    <File Include="stock/weiwaioutstocknew.aspx">
+      <publishTime>03/30/2020 11:35:00</publishTime>
+    </File>
+    <File Include="StoreConfirm/magInstruction.aspx">
+      <publishTime>04/05/2020 14:21:47</publishTime>
+    </File>
+    <File Include="StoreConfirm/magInstructionDetail.aspx">
+      <publishTime>04/24/2020 15:36:15</publishTime>
+    </File>
+    <File Include="StoreConfirm/magInstructionHeader.aspx">
+      <publishTime>04/15/2020 23:21:45</publishTime>
+    </File>
+    <File Include="StoreConfirm/SendInstruction.aspx">
+      <publishTime>03/05/2020 08:46:05</publishTime>
+    </File>
+    <File Include="test/magconn.aspx">
+      <publishTime>12/22/2019 22:07:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/28/2020 14:15:59</publishTime>
+    </File>
+    <File Include="使用说明.txt">
+      <publishTime>09/01/2018 17:16:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

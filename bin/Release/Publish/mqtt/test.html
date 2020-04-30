@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>websocket client</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        //**************zzt****************
+        var webSocket;
+        //HTTP处理程序的地址
+        var handlerUrl = "ws://192.168.2.10:80/action/GetNetParam";
+
+        function doConnection() {
+            InitWebSocket();
+        }
+
+        function SendData() {
+            var input = document.getElementById('sendText');
+            //初始化WebSocket
+            InitWebSocket();
+            //如果WebSocket打开，发送数据
+            if (webSocket.OPEN && webSocket.readyState == 1) {
+                if (input.value != "")
+                    webSocket.send(input.value);
+            }
+
+            //如果WebSocket关闭，显示消息
+            if (webSocket.readyState == 2 || webSocket.readyState == 3) {
+                alert("WebSocket关闭了，无法发送数据");
+            }
+        }
+
+        function CloseWebSocket() {
+            webSocket.close();
+            webSocket = undefined;
+        }
+
+        function InitWebSocket() {
+
+            //如果WebSocket对象未初始化，我们将初始化它
+            if (webSocket == undefined) {
+                webSocket = new WebSocket(handlerUrl);
+
+                //打开连接处理程序
+                webSocket.onopen = function () {
+                    alert("WebSocket已连接");
+                };
+
+                //消息数据处理程序
+                webSocket.onmessage = function (e) {
+                    var label = '<li>' + e.data + '</li>';
+                    $("#receiveText").append(label);
+                };
+
+                //关闭事件处理程序
+                webSocket.onclose = function () {
+                    alert("WebSocket closed.");
+                };
+
+                //错误事件处理程序
+                webSocket.onerror = function (e) {
+                    alert(e.message);
+                };
+            }
+            else {
+                //webSocket.open();没有open方法
+            }
+        }
+
+        function doDeleteConnection(devid) {
+            //初始化WebSocket
+            InitWebSocket();
+
+            //如果WebSocket打开，发送数据
+            if (webSocket.OPEN && webSocket.readyState == 1) {
+
+                webSocket.send("DelConnection^" + devid);
+            }
+
+            //如果WebSocket关闭，显示消息
+            if (webSocket.readyState == 2 || webSocket.readyState == 3) {
+                //document.getElementById("di_span").innerText = "WebSocket关闭了，无法发送数据";
+                alert("WebSocket关闭了，无法发送数据");
+            }
+        }
+        //**************zztend*************
+
+    </script>
+</head>
+<body>
+    <form id="sendForm">
+        <input id="sendText" placeholder="Text to send" />
+        <button type="button" onclick="SendData();">发送</button>
+        <button type="button" onclick="doConnection();">连接</button>
+        <button type="button" onclick="CloseWebSocket();">关闭</button>
+        <br />
+        <ul id="receiveText"></ul>
+    </form>
+</body>
+</html>

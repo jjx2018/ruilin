@@ -1,0 +1,56 @@
+
+[时间]:2020-04-28 15:25:06,449
+[级别]:INFO
+[内容]:sqlpurhead::::INSERT INTO ProduceOrderHeader (SeqNo ,ProPlanNo,ProOrderNo,SaleOrderNo,prono,ProName  ,Quantity ,Unit,State ,workshop,Inputer,InputeDate) select SeqNo,ProPlanNo,'PR202004280001',SaleOrderNo,prono,ProName  ,Quantity,Unit,0 ,workshop,'admin',getdate() from ProducePlan where sn=138
+
+[时间]:2020-04-28 15:25:06,462
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO ProduceOrderDetail (FSN,SeqNo ,ProPlanNo,ProOrderNo,SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity ,Unit,State ,workshop,Inputer,InputeDate,BomSN,BarCode) select (select max(sn) from ProduceOrderHeader where ProOrderNo='PR202004280001'),SeqNo,ProPlanNo,'PR202004280001',SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity,Unit,0 ,workshop,'admin',getdate(),BomSN,'20200428152506458' from ProducePlan where sn=138
+
+[时间]:2020-04-28 15:25:06,465
+[级别]:INFO
+[内容]:sqlpur::::update ProducePlan set State=1 where sn=138
+
+[时间]:2020-04-28 15:25:06,470
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO ProduceOrderDetail (FSN,SeqNo ,ProPlanNo,ProOrderNo,SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity ,Unit,State ,workshop,Inputer,InputeDate,BomSN,BarCode) select (select max(sn) from ProduceOrderHeader where ProOrderNo='PR202004280001'),SeqNo,ProPlanNo,'PR202004280001',SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity,Unit,0 ,workshop,'admin',getdate(),BomSN,'20200428152506467' from ProducePlan where sn=137
+
+[时间]:2020-04-28 15:25:06,471
+[级别]:INFO
+[内容]:sqlpur::::update ProducePlan set State=1 where sn=137
+
+[时间]:2020-04-28 15:25:06,476
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO ProduceOrderDetail (FSN,SeqNo ,ProPlanNo,ProOrderNo,SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity ,Unit,State ,workshop,Inputer,InputeDate,BomSN,BarCode) select (select max(sn) from ProduceOrderHeader where ProOrderNo='PR202004280001'),SeqNo,ProPlanNo,'PR202004280001',SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity,Unit,0 ,workshop,'admin',getdate(),BomSN,'20200428152506473' from ProducePlan where sn=136
+
+[时间]:2020-04-28 15:25:06,477
+[级别]:INFO
+[内容]:sqlpur::::update ProducePlan set State=1 where sn=136
+
+[时间]:2020-04-28 15:25:06,483
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO ProduceOrderDetail (FSN,SeqNo ,ProPlanNo,ProOrderNo,SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity ,Unit,State ,workshop,Inputer,InputeDate,BomSN,BarCode) select (select max(sn) from ProduceOrderHeader where ProOrderNo='PR202004280001'),SeqNo,ProPlanNo,'PR202004280001',SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity,Unit,0 ,workshop,'admin',getdate(),BomSN,'20200428152506479' from ProducePlan where sn=135
+
+[时间]:2020-04-28 15:25:06,484
+[级别]:INFO
+[内容]:sqlpur::::update ProducePlan set State=1 where sn=135
+
+[时间]:2020-04-28 15:27:40,892
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchaseOrderHeader (PurOrderNo,PurDate,Provider,ProviderID,JBRID,JBRName,ContactMan,Tel,Fax,JHDate,JHPlace,JSFS,ZZSFP,ProviderConfirm,ApproveID,CheckerID,MakerID,Inputer,InputeDate,PurPlanNo,SaleOrderNo) values('PU202004280001',NULL,'佛山市鑫恒利金属科技有限公司','2','admin','超级管理员','','','',NULL,'锐麟厂','月结',0,'','','','admin','admin',getdate(),'202003280001','RL7720022101')
+
+[时间]:2020-04-28 15:27:40,893
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchaseOrderDetail (FSN,PurOrderNo,PurPlanNo,SaleOrderNo,ProNo,ProName,ItemNo,ItemName,Spec,Quantity,Unit,Remark,Inputer,InputeDate,BomSN,BarCode) select (select max(sn) from PurchaseOrderHeader where PurOrderNo='PU202004280001'),'PU202004280001',PurPlanNo,SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity,Unit,'','admin',getdate(),BomSN,'20200428152740893' from PurchasePlan where sn=59
+
+[时间]:2020-04-28 15:27:40,893
+[级别]:INFO
+[内容]:sqlpur::::update PurchasePlan set State=1 where sn=59
+
+[时间]:2020-04-28 15:27:40,895
+[级别]:INFO
+[内容]:sqlpur::::INSERT INTO PurchaseOrderDetail (FSN,PurOrderNo,PurPlanNo,SaleOrderNo,ProNo,ProName,ItemNo,ItemName,Spec,Quantity,Unit,Remark,Inputer,InputeDate,BomSN,BarCode) select (select max(sn) from PurchaseOrderHeader where PurOrderNo='PU202004280001'),'PU202004280001',PurPlanNo,SaleOrderNo,prono,ProName ,ItemNo ,ItemName ,Spec ,Quantity,Unit,'','admin',getdate(),BomSN,'20200428152740895' from PurchasePlan where sn=58
+
+[时间]:2020-04-28 15:27:40,895
+[级别]:INFO
+[内容]:sqlpur::::update PurchasePlan set State=1 where sn=58

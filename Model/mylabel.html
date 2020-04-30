@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        物料标识卡
+    </title>
+    <style media=print>
+        /* 应用这个样式的在打印时隐藏 */
+        .noPrint {
+            display: none;
+        }
+
+        /* 应用这个样式的，从那个标签结束开始另算一页，之后在遇到再起一页，以此类推 */
+        .page {
+            page-break-after: always;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            background-color: gray;
+        }
+
+        table {
+            background-color: white;
+        }
+
+        .barcode {
+            text-align: center;
+            height: 80px;
+            font-family: Telen128Bar;
+            font-size: 50px;
+            padding: 10px 0 10px 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <input type='button' class="noPrint" value='打印' onclick='window.print();'>
